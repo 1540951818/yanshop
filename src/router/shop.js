@@ -1,6 +1,6 @@
 import Register  from  "@/views/login/register";
 import Login  from  "@/views/login/login";
-
+import Index  from "@/views/home/index";
 // 定义一个变量
 const shop = [
     //注册页面的路由
@@ -20,7 +20,17 @@ const shop = [
         meta:{
             title:"严选商城-登陆"
         }
-    }
+    },
+    // 首页
+    {
+        path: "/",
+        name: "Index",
+        component:Index,
+        meta:{
+            title:"严选商城-首页"
+        }
+    },
+    
 ];
 
 //抛出shop对象
